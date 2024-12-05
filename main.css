@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-image: url(./background.jpg);
+    background-size: cover;
+    height: 100vh;
+
+}
+.navbar{
+    display: flex;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .bars i{
+    font-size: 20px;
+    color: white;
+}
+.navbar ul {
+    display: flex;
+}
+.navbar ul li{
+    margin: 10px 5px;
+    padding: 10px 5px;
+    float: right;
+    list-style-type: none;
+ 
+}
+.navbar .logo{
+margin: 10px 0px;
+}   
+.navbar ul li a{
+    cursor: pointer ;
+    padding: 10px 5px;
+    color: gold ;
+    text-decoration: none;
+    transition: all 0.5s ;
+    border-radius: 8px;
+}
+.navbar ul li a:hover{
+    background-color: rgb(126, 126, 126);
+}
+.main .content{
+    text-align: center;
+    margin-top: 30px;
+}
+.main .content h1{
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+.main .content button{
+    font-size: 20px ;
+    padding: 5px 20px ;
+    border: 2px solid black ;
+    border-radius: 20px ;
+    margin: 0px 15px ;
+    text-decoration: none ;
+    color: rgb(255, 221, 0);
+  transition: all 0.5s;
+}
+.main .content button:hover{
+    transform: scale(1.4);
+    cursor: pointer;
+}
+.main .content button.btn1{
+    background-color: black;
+}
+.main .content button.btn2{
+    background-color: rgb(118, 94, 98);
+}
+.mission{
+    background-image: url(./back\ 2.jpg);
+    background-size: cover ;
+    background-attachment: fixed;
+}
+.mission .layout{
+    padding: 20px 0px;
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+.mission .layout h2{
+    padding: 5px;
+    width: 20% ;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.mission .layout .content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mission .layout .content .image,
+.mission .layout .content .missions{
+    width: 50%;
+}
+.mission .layout .content .image{
+    text-align: center;
+}
+.mission .layout .content .image img{
+    width: 50% ;
+}
+.mission .layout .content .missions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mission .layout .content .missions .card{
+    width: 45%;
+}
+/* media query */
+
+@media (max-width :991px){
+    .mission .layout .content .missions{
+       justify-content: center;
+    }
+       .mission .layout .content .missions .card{
+        width: 70%;
+    }
+}
+@media (max-width :767px){
+.navbar .bars{
+    display: block;
+}
+.navbar ul {
+    display: none;
+    padding: 10px;
+}
+.main .content img {
+    width: 50%;
+}
+.mission .layout h2{
+    width: 40%;
+}
+.mission .layout .content .image,
+.mission .layout .content .missions{
+    width: 100%;
+}
+.main .content{
+    width: 100%;}
+    font-size: 20px;
+}
+@media (max-width :567){
+    .mission .layout h2{
+        width: 40%;}
+        .mission .layout .content .missions .card{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+
+        }
+.mission .layout .content .image,
+.mission .layout .content .missions{
+    width: 100%;
+}
+.main .content{
+    width: 100%;}
+    font-size: 20px;
+}
